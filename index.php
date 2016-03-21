@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+
 -->
 <html>
     <head>
@@ -10,8 +8,22 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+       
+        <form action="calculosarit.php" method="POST">
+            Valor A<br>
+            <input type="text" name="val_a">
+            <br>
+            <select name="operacion">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+                <option value="^">^</option>
+              </select>
+            <br>
+            Valor B:<br>
+            <input type="text" name="val_b">
+            <input type="submit" value="Enviar">
+        </form>
     </body>
 </html>
